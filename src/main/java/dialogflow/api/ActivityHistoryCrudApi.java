@@ -1,5 +1,7 @@
 package dialogflow.api;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import dialogflow.DialogflowRaportCrudApplication;
 import dialogflow.model.ActivityEntry;
 import dialogflow.model.ActivityRepozytory;
 
@@ -21,6 +22,8 @@ public class ActivityHistoryCrudApi {
 	
 	@PostMapping("/entries")
 	public ResponseEntity<ActivityEntry> saveActivity(@RequestBody ActivityEntry activityEntry ){
+		//dodanie timestamp - na szybko be wydzielania serwisu -zostaje w kontrloerze
+		activityEntry.setTimestamp(new Timestamp(System.currentTimeMillis()));
 		ActivityEntry newEntry= activityRepozytory.save(activityEntry);
 		return ResponseEntity.ok().body(newEntry);
 		
