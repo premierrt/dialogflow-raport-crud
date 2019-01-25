@@ -19,6 +19,8 @@ public class ActivityEntry {
 	@GeneratedValue
 	private Long id;
 	
+	private Long userID;
+	
 	private String name;
 	
 	private String activity;
