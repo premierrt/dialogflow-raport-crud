@@ -1,0 +1,9 @@
+spring:
+  profiles: prod
+datasource:
+  db-activity:
+    url:
+    username:
+    password:
+    driver-class-name:
+    

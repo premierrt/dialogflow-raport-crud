@@ -1,0 +1,9 @@
+spring:
+  profiles: dev
+datasource:
+  db-activity:
+    url:
+    username:
+    password:
+   # driver-class-name: org.postgresql.Driver
+    
