@@ -7,6 +7,8 @@ https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-scri
 
 psql -h localhost -U postgres -d postgres
 
+
+
 --tworzenie uzytkownika na dockerze
 https://medium.com/@lvthillo/connect-from-local-machine-to-postgresql-docker-container-f785f00461a7
 

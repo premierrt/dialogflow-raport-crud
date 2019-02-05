@@ -2,8 +2,8 @@ spring:
   profiles: dev
 datasource:
   db-activity:
-    url:
-    username: dialogdb
-    password: dialogdb88
+    url: jdbc:postgresql://localhost:5432/dialogdb
+    username: dialog
+    password: dialog88
     driver-class-name: org.postgresql.Driver
     
