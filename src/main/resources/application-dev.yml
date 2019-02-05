@@ -3,7 +3,7 @@ spring:
 datasource:
   db-activity:
     url:
-    username:
-    password:
-   # driver-class-name: org.postgresql.Driver
+    username: dialogdb
+    password: dialogdb88
+    driver-class-name: org.postgresql.Driver
     
