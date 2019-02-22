@@ -1,6 +1,10 @@
 debug: true
 spring:
   profiles: prod
+  jpa:  
+    hibernate:  
+      ddl-auto: create  
+    database-platform: org.hibernate.dialect.PostgreSQLDialect   
   datasource:
     url: ${JDBC_DATABASE_URL}
     username: ${JDBC_DATABASE_USERNAME}
