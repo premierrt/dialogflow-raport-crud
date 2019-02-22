@@ -38,3 +38,26 @@ https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
 
 heroku postgres
 https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku#preparing-a-spring-boot-app-for-heroku
+
+
+heroku addons:create heroku-postgresql:hobby-dev
+--envs
+heroku config -a dialogflow-raport-crud
+
+
+https://stackoverflow.com/questions/33633243/connecting-to-heroku-postgres-from-spring-boot
+
+Host
+ec2-54-163-234-88.compute-1.amazonaws.com
+Database
+dcc3nlpeu7j6hc
+User
+pcwyvfyazjvynf
+Port
+5432
+Password
+
+URI
+postgres://pcwyvfyazjvynf:a3dd0786df4c2937ec2263a84686cfb251a16dd7c5e848bddc0339ffac31ac12@ec2-54-163-234-88.compute-1.amazonaws.com:5432/dcc3nlpeu7j6hc
+Heroku CLI
+heroku pg:psql postgresql-fluffy-70429 --app dialogflow-raport-crudl
