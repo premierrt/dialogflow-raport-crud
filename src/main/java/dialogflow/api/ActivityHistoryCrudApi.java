@@ -33,4 +33,9 @@ public class ActivityHistoryCrudApi {
 	public List<ActivityEntry> getActivityEntries() {
 		return (List<ActivityEntry>) activityRepozytory.findAll();
 	}
+	
+	@GetMapping("/init")
+	public void init() {
+		
+	}
 }
