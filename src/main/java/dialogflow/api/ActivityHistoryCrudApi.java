@@ -35,7 +35,7 @@ public class ActivityHistoryCrudApi {
 	}
 	
 	@GetMapping("/init")
-	public void init() {
-		
+	public String init() {
+		return "waken up";
 	}
 }
